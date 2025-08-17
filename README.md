@@ -15,3 +15,5 @@ When importing a character from mixamo, it is relatively easy to extract both th
 If you need a character of a different size than 1.80m or need a different collision mesh than the capsule, you can delete the default shape in your character and assign a custom one.
 
 Finally, the template associates the animationplayer assigned to the animationtree node, but does not provide any root of that node, in your character you will be responsible for assigning a value to that parameter
+
+Feel free to extend the functionality of this template by adding components such as motion components, camera controller components, or adding multiple collisionshape3ds to make complex collision meshes (Note that only those meshes that hang directly from the character root node will be part of the global character collision mesh, collision meshes of nodes attached to the character root node will be ignored).
